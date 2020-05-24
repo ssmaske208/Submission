@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tiger's Fitness </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        height: 1000px;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym.jpeg');
+    }
+    .left{
+        width: 170px;
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 30px;
+        top: 0px;
+    }
+    .left img{
+        width: 170px;
+
+    }
+    .left div{
+        text-align: center;
+        font-size: 28px;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 12px auto;
+        border: 2px solid green;
+        border-radius: 20px;
+    }
+    /* .right{
+        position: absolute ;
+        right: 3 px;
+        top: 0 px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+    .right btn{
+        width: 100px;
+    } */
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: red;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: greenyellow;
+    }
+    .container{
+        text-align: center;
+        border: 2px solidgreen;
+        margin: 100px 50px;
+        padding: 2px 2px;
+        border-radius: 30px;
+        width: 350px;
+        padding: 2 px;
+        border: 2px solid red;
+    }
+    .container form-group input{
+        width: 300px;
+        text-align: center;
+        display: block;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: inline-block;
+        width: 25%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="img/Dumbels.jpg">
+            <div> Tiger Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a>  </li>
+                <li><a href="#">Fitness Center</a>  </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>    
+        </div>
+
+        <!-- <div class="right">
+           <button class="btn"> Call Us Now</button> 
+           <button class="btn">Email us</button>
+        </div> -->
+
+    </header>
+
+    <div class="container">
+        <h2>Join the best GYM of Beed now.</h2>
+        <form action="no-action.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your mobile number">
+            </div>
+            <button class="btn">Submit</button>
+            <button class="btn">Reset</button>
+        </form>
+    </div>
+    
+</body>
+</html>
